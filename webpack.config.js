@@ -3,10 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtract = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: [
+    './frontend/src/index.js'
+  ],
   output: {
+    // 번들링 된 결과물 나옴
+    filename: 'index_bundle.js',
     path: path.join(__dirname, './dist'),
-      filename: 'index_bundle.js'
+    publicPath: 'http://localhost:8080'
   },
   module: {
     rules: [
@@ -39,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './frontend/src/index.html'
     }),
     new MiniCssExtract({ filename: `[name].css`})
   ]
