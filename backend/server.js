@@ -3,7 +3,7 @@ const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackConfig = require('../webpack.config.js');
 const compiler = webpack(webpackConfig);
 const express = require('express');
-const PORT = 8080;
+const PORT = 8085;
 const app = express();
 
 app.set("view engine", "html");
