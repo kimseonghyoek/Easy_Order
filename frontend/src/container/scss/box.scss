@@ -1,0 +1,20 @@
+@import '../../default.scss';
+
+.boxWrap {
+  border: 1px solid $bgColor;
+  background-color: $white;
+  border-radius: 25px;
+  width: 180px;
+  height: 180px;
+  margin: 24px;
+}
+
+.boxWrap:hover {
+  background-color: $customBlue;
+  color: $white;
+  box-shadow: 5px 5px $bgColor;
+}
+
+.boxTitle {
+  font-size: 16px;
+}
