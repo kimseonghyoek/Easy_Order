@@ -26,6 +26,7 @@ body {
   border: 1px solid none;
   width: 50%;
   height: fit-content;
+  background-color: $white;
   border-radius: 25px;
   box-shadow: 5px 5px #f4f4f4;
   padding: 10% 10% 10% 10%;
@@ -38,4 +39,11 @@ body {
 
 .subTitle {
   margin: 0%;
+}
+
+#titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
