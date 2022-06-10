@@ -1,5 +1,7 @@
+@import '../../default.scss';
+
 #wrapIcon {
-  background-color: yellow;
+  background-color: $kakaoColor;
   color: black;
   width: 58px;
   height: 58px;

@@ -4,7 +4,7 @@ import './scss/socal.scss';
 const Socal = (props) => {
   return (
     <div id="wrapIcon">
-      <p id="pid">logo</p>
+      <p id="pid">{props.logo}</p>
     </div>
   )
 }
