@@ -1,20 +1,28 @@
-// 회원가입
-const signUpCheck = (email, name, pw, rePw) => {
-  if (email == '') {
-    alert('이메일은 필수 입력입니다.');
+// 객체 리터럴
+const Common = {};
+
+Common.modalState = '';
+
+Common.checkSignUp = (email, name, pw, rePw) => {
+  if(email == '') {
+    Common.modalState = '01';
+    alert(Common.modalState)
   }
 
-  if (name == '' ) {
-    alert('매장명은 필수 입력입니다.');
+  if(pw == '') {
+    Common.modalState = '02';
+    alert(Common.modalState)
   }
 
-  if (pw == '') {
-    alert('비밀번호는 필수 입력입니다.');
-  }
+  if(name == '') {
+    Common.modalState = '03';
+    alert(Common.modalState)
+  } 
 
-  if (pw != rePw) {
-    alert('비밀번호가 서로 다릅니다.')
+  if(pw != rePw) {
+    Common.modalState = '04';
+    alert(Common.modalState)
   }
 }
 
-export default signUpCheck; 
+export default Common;

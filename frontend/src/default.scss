@@ -8,3 +8,14 @@ $bgColor: #F5F7F9;
 $white: #ffffff;
 $customBlue: #4f4fff;
 $kakaoColor: #FEE500;
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+p {
+  font-weight: bold;
+  margin: 14px;
+}

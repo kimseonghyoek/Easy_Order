@@ -1,4 +1,39 @@
+@import '../../default.scss';
+
 input {
-  font-size: 25px;
-  border-radius: 25px;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 12px;
+  margin: 14px; 
+  width: 420px;
+}
+
+.loginTitle {
+  text-align: center;
+  font-size: 34px;
+}
+
+.loginBtn {
+  width: 420px;
+  margin: 14px;
+  font-size: 24px;
+  border-radius: 15px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#signUp {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  list-style: none;
+}
+
+p {
+  font-weight: bold;
+  margin: 14px;
 }

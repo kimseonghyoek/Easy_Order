@@ -4,7 +4,7 @@ import './scss/input.scss'
 const Input = (props) => {
   return (
     <div>
-      <input placeholder={props.placeholder}></input>
+      <input placeholder={props.placeholder} name={props.name} onChange={props.change}></input>
     </div>
   )
 }
